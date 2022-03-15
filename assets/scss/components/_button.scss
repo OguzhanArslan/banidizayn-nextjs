@@ -1,0 +1,16 @@
+// main: ../main.scss
+
+.button {
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $base-font;
+    line-height: 1.23;
+    padding: 14px 60px 14px 24px;
+    position: relative;
+    text-align: left;
+}

@@ -1,0 +1,43 @@
+﻿// main: main.scss
+
+@mixin max1250 {
+    @media (max-width: 1250px) {
+        @content;
+    }
+}
+
+@mixin min1250 {
+    @media (min-width: 1250px) {
+        @content;
+    }
+}
+
+@mixin max1200 {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin min1200 {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin min991 {
+    @media (min-width: 991px) {
+        @content;
+    }
+}
+
+@mixin tablet-mobil {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin mobil {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
