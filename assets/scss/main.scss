@@ -1,7 +1,12 @@
 ﻿// out: ../css/style.css, compress: true, sourceMap: false, autoprefixer: last 5 versions, groupmedia: true
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import 'bootstrap/bootstrap.scss';
 @import '_mixins.scss';
 @import '_variables.scss';
 @import '_reset.scss';
+@import '_fonts.scss';
 
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
 @import 'components/_button.scss';

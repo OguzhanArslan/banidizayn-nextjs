@@ -1,0 +1,63 @@
+// main: ../main.scss
+
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 43px rgba(183, 183, 183, 0.25);
+
+    &__top {
+        background-color: $color-black;
+        padding: 16px 0;
+
+        p {
+            display: flex;
+            align-items: center;
+            color: $color-white;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            margin-right: 20px;
+
+            &.text-right {
+                display: block;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            i {
+                font-size: 16px;
+                margin-right: 6px;
+            }
+
+            a {
+                color: $color-white;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 34px 0;
+    }
+
+    &__menu {
+        display: flex;
+
+        &-item {
+            margin: 0 24px;
+        }
+
+        &-link {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #989898;
+        }
+    }
+}

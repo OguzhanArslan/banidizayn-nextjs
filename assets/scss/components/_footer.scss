@@ -1,0 +1,99 @@
+// main: ../main.scss
+
+.footer {
+    background: #000000;
+    margin-top: 30px;
+    padding: 112px 0 76px 0;
+
+    &__logo {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #C2C2C2;
+    }
+
+    &__social {
+        display: flex;
+        margin-top: 24px;
+
+        &-item {
+            margin-right: 20px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+        &-link {
+            border: 1px solid #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 37px;
+            height: 37px;
+
+            i {
+                color: $color-white;
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__title {
+        color: $color-white;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 18px;
+    }
+
+    &__menu {
+        &-item {
+            margin-bottom: 10px;
+        }
+
+        &-link {
+            color: #C2C2C2;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    &__info {
+        &-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+
+            i {
+                font-size: 25px;
+                color: $color-white;
+                margin-right: 10px;
+            }
+        }
+
+        &-link {
+            color: #C2C2C2;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    &__bottom {
+        margin-top: 104px;
+    }
+
+    &__copy {
+        color: $color-white;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
