@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-md-3">
+                    <div className="col-12 col-md-4">
                         <Link href="/">
                             <a className="footer__logo">
                                 <Image
@@ -35,7 +35,7 @@ export default function Footer() {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-12 col-md-9">
+                    <div className="col-12 col-md-8">
                         <div className="row">
                             <div className="col-12 col-md-3">
                                 <h3 className="footer__title">Site Links</h3>
@@ -62,7 +62,7 @@ export default function Footer() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-12 col-md-3">
+                            <div className="col-12 col-md-4">
                                 <h3 className="footer__title">Explore Links</h3>
                                 <ul className="footer__menu">
                                     <li className="footer__menu-item">
@@ -87,7 +87,7 @@ export default function Footer() {
                                     </li>
                                 </ul>
                             </div>
-                            <div className="col-12 col-md-6">
+                            <div className="col-12 col-md-5">
                                 <h3 className="footer__title">Contact Site</h3>
                                 <ul className="footer__info">
                                     <li className="footer__info-item">
