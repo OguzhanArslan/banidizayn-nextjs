@@ -1,24 +1,25 @@
-// main: ../main.scss
+// main .
 
 .header {
     background: #FFFFFF;
     box-shadow: 0px 0px 43px rgba(183, 183, 183, 0.25);
 
     &__top {
-        background-color: $color-black;
+        background-color: #000000;
         padding: 16px 0;
 
-        p {
+        &-text {
             display: flex;
             align-items: center;
-            color: $color-white;
+            color: #FFFFFF;
             font-weight: 400;
             font-size: 12px;
             line-height: 18px;
             margin-right: 20px;
 
-            &.text-right {
+            &--right {
                 display: block;
+                text-align: right;
             }
 
             &:last-child {
@@ -31,7 +32,7 @@
             }
 
             a {
-                color: $color-white;
+                color: #FFFFFF;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 18px;

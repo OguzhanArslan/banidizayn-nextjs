@@ -1,0 +1,49 @@
+{
+    "top": {
+        "left": [
+            {
+                "href": "mailto:mail@yourcompany.com",
+                "text": "mail@yourcompany.com",
+                "icon": "email"
+            },
+            {
+                "href": "tel:+896 120 5889",
+                "text": "+896 120 5889 (Toll free)",
+                "icon": "phone"
+            }
+        ],
+        "right": [
+            {
+                "text": "Mon - Sat | 10am - 7pm"
+            }
+        ]
+    },
+    "menu": [
+        {
+            "href": "/",
+            "text": "Home"
+        },
+        {
+            "href": "/about-us",
+            "text": "About"
+        },
+        {
+            "href": "/",
+            "text": "Services"
+        },
+        {
+            "href": "/",
+            "text": "Portfolio"
+        },
+        {
+            "href": "/",
+            "text": "Blog"
+        }
+    ],
+    "links": [
+        {
+            "href": "/",
+            "text": "Let’s Start"
+        }
+    ]
+}

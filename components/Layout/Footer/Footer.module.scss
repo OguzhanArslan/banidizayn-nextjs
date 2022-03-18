@@ -1,4 +1,4 @@
-// main: ../main.scss
+// main: .
 
 .footer {
     background: #000000;
@@ -39,14 +39,14 @@
             height: 37px;
 
             i {
-                color: $color-white;
+                color: #FFFFFF;
                 font-size: 20px;
             }
         }
     }
 
     &__title {
-        color: $color-white;
+        color: #FFFFFF;
         font-weight: 700;
         font-size: 18px;
         line-height: 27px;
@@ -74,7 +74,7 @@
 
             i {
                 font-size: 25px;
-                color: $color-white;
+                color: #FFFFFF;
                 margin-right: 10px;
             }
         }
@@ -92,7 +92,7 @@
     }
 
     &__copy {
-        color: $color-white;
+        color: #FFFFFF;
         font-weight: 300;
         font-size: 12px;
         line-height: 18px;

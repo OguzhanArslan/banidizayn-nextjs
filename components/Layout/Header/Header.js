@@ -1,34 +1,36 @@
 import Link from "next/link"
 import Image from "next/image"
 
+import styles from "./Header.module.scss"
 import Logo from "../../../assets/images/logo.png"
 
-export default function Header() {
+export default function Header(props) {
+    const { data } = props;
     return <>
-        <header className="header">
-            <div className="header__top">
+        <header className={styles.header}>
+            <div className={styles["header__top"]}>
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6 d-flex">
-                            <p>
-                                <i className="icon-email"></i>
-                                <a href="mailto:mail@yourcompany.com">mail@yourcompany.com</a>
-                            </p>
-                            <p>
-                                <i className="icon-phone"></i>
-                                <a href="tel:+896 120 5889">+896 120 5889 (Toll free)</a>
-                            </p>
+                            {data.top.left.map((left) => (
+                                <p className={styles["header__top-text"]}>
+                                    <i className={`icon-${left.icon}`}></i>
+                                    <a href={left.href}>{left.text}</a>
+                                </p>
+                            ))}
                         </div>
                         <div className="col-12 col-md-6">
-                            <p className="text-right">Mon - Sat | 10am - 7pm</p>
+                            {data.top.right.map((right) => (
+                                <p className={`${styles["header__top-text--right"]} ${styles["header__top-text"]}`}>{right.text}</p>
+                            ))}
                         </div>
                     </div>
                 </div>
             </div>
             <div className="container">
-                <div className="header__bottom">
+                <div className={styles["header__bottom"]}>
                     <Link href="/">
-                        <a className="header__logo">
+                        <a className={styles["header__logo"]}>
                             <Image
                                 src={Logo}
                                 alt="BANI DESIGN"
@@ -37,34 +39,18 @@ export default function Header() {
                             />
                         </a>
                     </Link>
-                    <ul className="header__menu">
-                        <li className="header__menu-item">
-                            <Link href="/">
-                                <a className="header__menu-link">Home</a>
-                            </Link>
-                        </li>
-                        <li className="header__menu-item">
-                            <Link href="/about-us">
-                                <a className="header__menu-link">About</a>
-                            </Link>
-                        </li>
-                        <li className="header__menu-item">
-                            <Link href="/services">
-                                <a className="header__menu-link">Services</a>
-                            </Link>
-                        </li>
-                        <li className="header__menu-item">
-                            <Link href="/portfolio">
-                                <a className="header__menu-link">Portfolio</a>
-                            </Link>
-                        </li>
-                        <li className="header__menu-item">
-                            <Link href="/blog">
-                                <a className="header__menu-link">Blog</a>
-                            </Link>
-                        </li>
+                    <ul className={styles["header__menu"]}>
+                        {data.menu.map((menu) => (
+                            <li className={styles["header__menu-item"]}>
+                                <Link href={menu.href}>
+                                    <a className={styles["header__menu-link"]}>{menu.text}</a>
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
-                    <a href="" className="button button--default">Let’s Start</a>
+                    {data.links.map((link) => (
+                        <a href={link.href} className="button button--default">{link.text}</a>
+                    ))}
                 </div>
             </div>
         </header>

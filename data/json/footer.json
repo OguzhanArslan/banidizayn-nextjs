@@ -1,0 +1,86 @@
+{
+    "about": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "social": [
+        {
+            "icon": "facebook",
+            "href": "#facebook"
+        },
+        {
+            "icon": "twitter",
+            "href": "#twitter"
+        },
+        {
+            "icon": "linkedin",
+            "href": "#linkedin"
+        },
+        {
+            "icon": "instagram",
+            "href": "#instagram"
+        }
+    ],
+    "menu": [
+        {
+            "title": "Site Links",
+            "links": [
+                {
+                    "href": "/about-us",
+                    "text": "About Us"
+                },
+                {
+                    "href": "/",
+                    "text": "Our Services"
+                },
+                {
+                    "href": "/",
+                    "text": "Our Teams"
+                },
+                {
+                    "href": "/",
+                    "text": "Projects Gallery"
+                }
+            ]
+        },
+        {
+            "title": "Explore Links",
+            "big": true,
+            "links": [
+                {
+                    "href": "/",
+                    "text": "Contact Us"
+                },
+                {
+                    "href": "/",
+                    "text": "Pricing Table"
+                },
+                {
+                    "href": "/",
+                    "text": "Terms & Conditions"
+                },
+                {
+                    "href": "/",
+                    "text": "Privacy policy"
+                }
+            ]
+        }
+    ],
+    "contact": {
+        "title": "Contact Site",
+        "items": [
+            {
+                "icon": "map",
+                "text": "Company No. 08116577, 101 Baker Street, New York, 12345, USA."
+            },
+            {
+                "icon": "phone",
+                "href": "tel:+896 120 5889",
+                "text": "+896 120 5889"
+            },
+            {
+                "icon": "email",
+                "href": "mailto:mail@company.com",
+                "text": "mail@company.com"
+            }
+        ]
+    },
+    "copyright": "© Copyright 2022 by Architeque - Services site part of JW-Construction .co .ltd"
+}
