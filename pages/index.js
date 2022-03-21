@@ -1,14 +1,18 @@
 import Head from 'next/head'
 import HomeBanner from '../components/Banner/Home/Banner'
-import { Data_Banner } from "../data/index"
+import HomeAbout from '../components/Home/About/About'
+import HomeTeam from "../components/Home/Team/Team"
+import { Data_Banner, Data_HomeAbout } from "../data/index"
 
 export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Home | BaniDizayn</title>
-      </Head>
-      <HomeBanner items={Data_Banner} />
-    </>
-  )
+    return (
+        <>
+            <Head>
+                <title>Home | BaniDizayn</title>
+            </Head>
+            <HomeBanner items={Data_Banner} />
+            <HomeAbout data={Data_HomeAbout} />
+            <HomeTeam />
+        </>
+    )
 }

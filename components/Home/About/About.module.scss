@@ -1,0 +1,64 @@
+// main: .
+
+.home {
+    &__about {
+        padding: 132px 0 148px 0;
+
+        &-content {
+            background-size: cover;
+            background-position: center bottom;
+            min-height: 680px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-top: 60px;
+        }
+
+        &-text {
+            &-title {
+                color: #000000;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 72px;
+                margin-bottom: 12px;
+            }
+
+            &-description {
+                color: #6C6C6C;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 60px;
+            }
+        }
+
+        &-comment {
+            border-bottom: 1px #333535 solid;
+            text-align: right;
+            padding-bottom: 44px;
+
+            &-text {
+                color: #6C6C6C;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 20px;
+            }
+
+            &-name {
+                color: #BFBFBF;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+                margin: 0;
+            }
+
+            &-description {
+                color: #000000;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+}

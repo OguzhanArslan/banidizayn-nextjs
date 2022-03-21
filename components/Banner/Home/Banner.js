@@ -18,8 +18,8 @@ export default function Banner(props) {
     };
 
     return (
-        <>
-            <Slider ref={slider} className={styles.promo} {...settings}>
+        <div className={styles.promo}>
+            <Slider ref={slider} {...settings}>
                 { items.map(item => {
                     const image = require('../../../assets/images/promo/' + item.image + '.jpg');
                     return (
@@ -52,6 +52,6 @@ export default function Banner(props) {
                     </button>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

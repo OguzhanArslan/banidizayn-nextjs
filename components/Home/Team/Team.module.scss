@@ -1,0 +1,24 @@
+// main: .
+
+.home {
+    &__team {
+        margin-bottom: 165px;
+        padding: 154px 0;
+
+        &-title {
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 96px;
+            margin-bottom: 0;
+        }
+
+        &-description {
+            color: #E0E0E0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 30px;
+        }
+    }
+}
