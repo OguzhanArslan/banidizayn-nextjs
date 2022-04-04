@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Home | BaniDizayn</title>
+                <title>Home | Bani Dizayn</title>
             </Head>
             <HomeBanner items={Data_Banner} />
             <HomeAbout data={Data_HomeAbout} />
