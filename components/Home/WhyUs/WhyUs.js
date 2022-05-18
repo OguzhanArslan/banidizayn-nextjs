@@ -4,6 +4,9 @@ import Image from "next/image"
 import styles from "./WhyUs.module.scss"
 
 import WhyUsImage from "../../../assets/images/home/whyus.jpg"
+import List from "../../List/List"
+
+var listData = ["Profesional works", "Best value solutions", "100% Guarantee", "High professional teams", "Profesional teams", "Architecture licensed"]
 
 export default function HomeWhyUs(props) {
     return (
@@ -12,14 +15,7 @@ export default function HomeWhyUs(props) {
                 <div className="row justify-beetween align-items-center">
                     <div className="col-12 col-md-7">
                         <h2>Why us?</h2>
-                        <ul className="list">
-                            <li>Profesional works</li>
-                            <li>Best value solutions</li>
-                            <li>100% Guarantee</li>
-                            <li>High professional teams</li>
-                            <li>Profesional teams</li>
-                            <li>Architecture licensed</li>
-                        </ul>
+                        <List data={listData} />
                         <p><strong>We’re committed to delivering eye-catching architect designs</strong></p>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>

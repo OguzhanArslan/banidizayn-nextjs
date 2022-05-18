@@ -3,6 +3,7 @@ import HomeBanner from '../components/Banner/Home/Banner'
 import HomeAbout from '../components/Home/About/About'
 import HomeTeam from "../components/Home/Team/Team"
 import HomeWhyUs from "../components/Home/WhyUs/WhyUs"
+import HomeService from "../components/Home/Service/Service"
 
 import { Data_Banner, Data_HomeAbout } from "../data/index"
 
@@ -16,6 +17,7 @@ export default function Home() {
             <HomeAbout data={Data_HomeAbout} />
             <HomeTeam />
             <HomeWhyUs />
+            <HomeService />
         </>
     )
 }

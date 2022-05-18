@@ -1,0 +1,28 @@
+// main: .
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 44px;
+
+    li {
+        color: #6C6C6C;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        width: 50%;
+        padding: 10px 10px 10px 38px;
+        position: relative;
+
+        &::before {
+            font-family: "icomoon";
+            content: "\e905";
+            color: #000000;
+            font-size: 13px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -12px;
+        }
+    }
+}
