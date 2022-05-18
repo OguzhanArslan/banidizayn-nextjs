@@ -2,11 +2,14 @@
 
 .home {
     &__whyus {
+        margin-bottom: 162px;
+        
         h2 {
             color: #000000;
             font-weight: 700;
             font-size: 48px;
             line-height: 72px;
+            margin-bottom: 34px;
         }
 
         p {
@@ -14,6 +17,7 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 21px;
+            margin-bottom: 12px;
 
             strong {
                 color: #000000;
