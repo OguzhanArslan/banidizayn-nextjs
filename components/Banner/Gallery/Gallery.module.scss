@@ -1,0 +1,14 @@
+// main: .
+
+.gallery {
+    position: relative;
+    margin: 30px -15px 0 -15px;
+
+    &__item {
+        padding: 0 15px;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

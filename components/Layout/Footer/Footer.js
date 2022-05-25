@@ -24,8 +24,8 @@ export default function Footer(props) {
                         </Link>
                         <p className={styles["footer__text"]}>{ data.about }</p>
                         <ul className={styles["footer__social"]}>
-                            { data.social.map((social) => (
-                                <li className={styles["footer__social-item"]}>
+                            { data.social.map((social, index) => (
+                                <li key={index} className={styles["footer__social-item"]}>
                                     <a href={social.href} className={styles["footer__social-link"]} target="_blank"><i className={`icon-${social.icon}`}></i></a>
                                 </li>
                             )) }

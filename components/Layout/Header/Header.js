@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 import styles from "./Header.module.scss"
-import Logo from "../../../assets/images/logo.png"
+import Logo from "../../../assets/images/logo.svg"
 
 export default function Header(props) {
     const { data } = props;

@@ -2,6 +2,70 @@
 
 .home {
     &__service {
-        
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 777px;
+
+        &-title {
+            padding-top: 140px;
+            padding-bottom: 77px;
+            text-align: right;
+
+            h2 {
+                color: #000000;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 96px;
+            }
+
+            p {
+                color: #6C6C6C;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+
+        &-item {
+            background-color: #FFFFFF;
+            border-left: 3px #D6D6D6 solid;
+            padding: 62px 44px;
+
+            h3 {
+                color: #000000;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                color: #6C6C6C;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                margin-bottom: 26px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                color: #BFBFBF;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: right;
+
+                i {
+                    color: #BFBFBF;
+                    font-size: 7px;
+                    margin-left: 4px;
+                }
+            }
+        }
     }
 }

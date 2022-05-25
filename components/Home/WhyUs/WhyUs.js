@@ -19,7 +19,7 @@ export default function HomeWhyUs(props) {
                         <p><strong>We’re committed to delivering eye-catching architect designs</strong></p>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>
-                    <div className="col-12 col-md-5">
+                    <div className="col-12 col-md-5 text-right">
                         <Image
                             src={WhyUsImage}
                             alt={"Why Us"}

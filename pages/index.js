@@ -4,8 +4,10 @@ import HomeAbout from '../components/Home/About/About'
 import HomeTeam from "../components/Home/Team/Team"
 import HomeWhyUs from "../components/Home/WhyUs/WhyUs"
 import HomeService from "../components/Home/Service/Service"
+import HomeContact from "../components/Home/Contact/Contact"
+import HomeGallery from "../components/Banner/Gallery/Gallery"
 
-import { Data_Banner, Data_HomeAbout } from "../data/index"
+import { Data_Banner, Data_HomeAbout, Data_Gallery } from "../data/index"
 
 export default function Home() {
     return (
@@ -18,6 +20,8 @@ export default function Home() {
             <HomeTeam />
             <HomeWhyUs />
             <HomeService />
+            <HomeContact />
+            <HomeGallery items={Data_Gallery} />
         </>
     )
 }
