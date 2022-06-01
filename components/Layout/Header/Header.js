@@ -34,8 +34,8 @@ export default function Header(props) {
                             <Image
                                 src={Logo}
                                 alt="BANI DESIGN"
-                                width={160}
-                                height={72}
+                                width={120}
+                                height={120}
                             />
                         </a>
                     </Link>

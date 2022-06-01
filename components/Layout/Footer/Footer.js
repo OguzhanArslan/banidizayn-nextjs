@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 import styles from "./Footer.module.scss"
-import Logo from "../../../assets/images/logo-white.png"
+import Logo from "../../../assets/images/logo-white.svg"
 
 export default function Footer(props) {
     const { data } = props;
@@ -17,8 +17,8 @@ export default function Footer(props) {
                                 <Image
                                     src={Logo}
                                     alt="BANI DESIGN"
-                                    width={160}
-                                    height={72}
+                                    width={120}
+                                    height={120}
                                 />
                             </a>
                         </Link>

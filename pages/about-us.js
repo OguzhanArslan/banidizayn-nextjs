@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>About Us | BaniDizayn</title>
+        <title>About Us | Bani Design</title>
       </Head>
       About Us
     </>

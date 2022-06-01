@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Home | Bani Dizayn</title>
+                <title>Home Page | Bani Design</title>
             </Head>
             <HomeBanner items={Data_Banner} />
             <HomeAbout data={Data_HomeAbout} />

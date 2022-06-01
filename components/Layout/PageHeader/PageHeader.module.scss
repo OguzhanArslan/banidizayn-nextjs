@@ -7,10 +7,12 @@
         background-repeat: no-repeat;
         width: 100%;
         min-height: 250px;
+        display: flex;
 
         &-content {
             display: flex;
             align-items: center;
+            height: 100%;
         }
 
         &-title {
