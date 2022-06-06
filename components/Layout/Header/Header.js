@@ -12,8 +12,8 @@ export default function Header(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6 d-flex">
-                            {data.top.left.map((left) => (
-                                <p className={styles["header__top-text"]}>
+                            {data.top.left.map((left, index) => (
+                                <p key={index} className={styles["header__top-text"]}>
                                     <i className={`icon-${left.icon}`}></i>
                                     <a href={left.href}>{left.text}</a>
                                 </p>
@@ -40,8 +40,8 @@ export default function Header(props) {
                         </a>
                     </Link>
                     <ul className={styles["header__menu"]}>
-                        {data.menu.map((menu) => (
-                            <li className={styles["header__menu-item"]}>
+                        {data.menu.map((menu, index) => (
+                            <li key={index} className={styles["header__menu-item"]}>
                                 <Link href={menu.href}>
                                     <a className={styles["header__menu-link"]}>{menu.text}</a>
                                 </Link>
