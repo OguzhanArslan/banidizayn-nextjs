@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>Products | Bani Design</title>
+        <title>Products 2 | Bani Design</title>
       </Head>
       <PageHeader title="Products" image="blog" />
     </>
