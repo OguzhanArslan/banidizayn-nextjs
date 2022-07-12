@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }) {
     return <>
         <Head>
             <link rel="icon" href="/favicon.ico" />
+            <meta name="googlebot" content="noindex" />
         </Head>
         <Header data={Data_Header} />
         <Component {...pageProps} />
