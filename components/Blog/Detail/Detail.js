@@ -4,8 +4,10 @@ import BlogImage from "../../../assets/images/page/01.png";
 import Sidebar from "../Sidebar/Sidebar";
 import Link from "next/link";
 
+import { Data_Blog } from "../../../data/index"
+
 export default function BlogDetail({item}) {
-    console.log('item', item)
+    const category = Data_Blog.categories.find((x) => x.id === item.category);
     return (<div className={styles.blog}>
         <div className="container">
             <div className="row">
@@ -21,15 +23,15 @@ export default function BlogDetail({item}) {
                         />
                         <div className={styles["blog__detail-content"]}>
                             <div className={styles["blog__detail-property"]}>
-                                <span>February 25, 2022</span>
+                                <span>{ item.date }</span>
                                 <span>
-                                    <Link href={"/"}>
-                                        <a>Building</a>
+                                    <Link href={"/blog/" + category.link}>
+                                        <a>{ category.title }</a>
                                     </Link>
                                 </span>
                             </div>
-                            <h2>Antonio Sanchez is the design winner in Japan</h2>
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy</p>
+                            <h2>{item.title}</h2>
+                            {<div dangerouslySetInnerHTML={{ __html: item.content }} />}
                         </div>
                     </div>
                 </div>
