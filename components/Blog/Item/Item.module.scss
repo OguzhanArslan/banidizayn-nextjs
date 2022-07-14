@@ -2,11 +2,12 @@
 
 .blog {
     &__item {
+        height: 100%;
         margin: 0 0 40px;
         
         &-content {
-            background-color: #f3f3f3;
-            padding: 75px 45px 75px 45px;
+            height: 100%;
+            padding: 40px 20px 0 20px;
 
             h2 {
                 font-size: 24px;

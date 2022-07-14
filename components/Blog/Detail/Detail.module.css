@@ -1,0 +1,39 @@
+.blog__detail {
+  margin: 0 0 40px;
+}
+
+.blog__detail-content {
+  padding: 0 0 30px 0;
+}
+
+.blog__detail-content h2 {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 42px;
+  word-wrap: break-word;
+}
+
+.blog__detail-content p {
+  font-size: 16px;
+  color: #6c6c6c;
+  margin: 0 0 25px;
+}
+
+.blog__detail-property {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+
+.blog__detail-property > span {
+  margin-right: 28px;
+  color: #666666;
+  font-size: 14px;
+}
+
+.blog__detail-property > span a {
+  color: #000000;
+}
