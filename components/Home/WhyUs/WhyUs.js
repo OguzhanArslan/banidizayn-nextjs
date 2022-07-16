@@ -6,7 +6,8 @@ import styles from "./WhyUs.module.scss"
 import WhyUsImage from "../../../assets/images/home/whyus.jpg"
 import List from "../../List/List"
 
-var listData = ["Profesional works", "Best value solutions", "100% Guarantee", "High professional teams", "Profesional teams", "Architecture licensed"]
+var listData = ["High quality", "Easy and fast application", "Stylish appearance", "Respect for nature", "Professional team", "Technical support"]
+var listDataTwo = ["Quick and easy Installation", "UV resistant", "Environmentally friendly", "Scratch resistant", "Easy to clean", "Does not stain"]
 
 export default function HomeWhyUs(props) {
     return (
@@ -16,8 +17,8 @@ export default function HomeWhyUs(props) {
                     <div className="col-12 col-md-7">
                         <h2>Why us?</h2>
                         <List data={listData} />
-                        <p><strong>We’re committed to delivering eye-catching architect designs</strong></p>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        <h2>Why wood profile?</h2>
+                        <List data={listDataTwo} />
                     </div>
                     <div className="col-12 col-md-5 text-right">
                         <Image

@@ -21,7 +21,7 @@ export default function Banner(props) {
         <div className={styles.promo}>
             <Slider ref={slider} {...settings}>
                 { items.map(item => {
-                    const image = require('../../../assets/images/promo/' + item.image + '.jpg');
+                    const image = require('../../../assets/images/promo/' + item.image);
                     return (
                         <div className={styles["promo__item"]}>
                             <div className="container">

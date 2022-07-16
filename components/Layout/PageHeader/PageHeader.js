@@ -1,7 +1,7 @@
 import styles from "./PageHeader.module.scss";
 
 export default function PageHeader({ image, title }) {
-    const PageImg = require('../../../assets/images/page/' + image + '.png');
+    const PageImg = require('../../../assets/images/page/' + image + '.jpg');
 
     return(
         <div class={styles["page__header"]} style={{backgroundImage: `url(${PageImg.default.src})`}}>

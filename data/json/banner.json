@@ -1,12 +1,17 @@
 [
     {
-        "title": "Modern minimalist home",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page.",
-        "image": "01"
+        "title": "Change your living spaces",
+        "description": "With our wooden profile application, you can transform your living spaces into a completely different look in a short time. Do not miss the chance to experience a quick change with our wall profiles that offer the opportunity to be applied in areas such as offices, homes, cafes, restaurants.",
+        "image": "change-your-living-spaces.jpg"
     },
     {
-        "title": "Modern minimalist home 2",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page.",
-        "image": "01"
+        "title": "Show your difference",
+        "description": "You can reveal your difference with different color and model options of high quality wall profiles produced by Acarkon.",
+        "image": "show-your-difference.jpg"
+    },
+    {
+        "title": "Don't postpone your dreams",
+        "description": "Do not postpone the change you want to make in your home, office or workplace, in short, your dreams. The wall profile will allow you to get the stylish look you want in your living space.",
+        "image": "dont-postpone-your-dreams.jpg"
     }
 ]

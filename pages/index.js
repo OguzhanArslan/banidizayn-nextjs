@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import HomeBanner from '../components/Banner/Home/Banner'
 import HomeAbout from '../components/Home/About/About'
-import HomeTeam from "../components/Home/Team/Team"
 import HomeWhyUs from "../components/Home/WhyUs/WhyUs"
 import HomeService from "../components/Home/Service/Service"
 import HomeContact from "../components/Home/Contact/Contact"
@@ -18,7 +17,6 @@ export default function Home() {
             </Head>
             <HomeBanner items={Data_Banner} />
             <HomeAbout data={Data_HomeAbout} />
-            <HomeTeam />
             <HomeWhyUs />
             <HomeService />
             <HomeContact />
