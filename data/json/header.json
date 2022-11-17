@@ -28,12 +28,12 @@
             "text": "About"
         },
         {
-            "href": "/",
+            "href": "/services",
             "text": "Services"
         },
         {
-            "href": "/",
-            "text": "Portfolio"
+            "href": "/products",
+            "text": "Products"
         },
         {
             "href": "/blog",
