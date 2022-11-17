@@ -15,6 +15,6 @@ export default function App({ Component, pageProps }) {
         </Head>
         <Header data={Data_Header} />
         <Component {...pageProps} />
-        <Footer data={Data_Footer} />
+        {/* <Footer data={Data_Footer} /> */}
     </>
 }

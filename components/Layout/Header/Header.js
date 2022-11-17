@@ -1,17 +1,24 @@
 import Link from "next/link"
 import Image from "next/image"
+import { useState } from "react"
+import classnames from "classnames"
 
 import styles from "./Header.module.scss"
 import Logo from "../../../assets/images/logo.svg"
 
 export default function Header(props) {
     const { data } = props;
+    const [navStatus, setNavStatus] = useState(false);
+    
     return <>
-        <header className={styles.header}>
+        <header className={classnames({
+               [styles["header"]]: true,
+               [styles["header--open"]]: navStatus
+            })}>
             <div className={styles["header__top"]}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 col-md-6 d-flex">
+                        <div className="col-12 col-md-8 d-flex">
                             {data.top.left.map((left, index) => (
                                 <p key={index} className={styles["header__top-text"]}>
                                     <i className={`icon-${left.icon}`}></i>
@@ -19,7 +26,7 @@ export default function Header(props) {
                                 </p>
                             ))}
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-4">
                             {data.top.right.map((right) => (
                                 <p className={`${styles["header__top-text--right"]} ${styles["header__top-text"]}`}>{right.text}</p>
                             ))}
@@ -39,6 +46,7 @@ export default function Header(props) {
                             />
                         </a>
                     </Link>
+                    <button className={styles["header__nav"]} onClick={() => setNavStatus(!navStatus)}><span></span></button>
                     <ul className={styles["header__menu"]}>
                         {data.menu.map((menu, index) => (
                             <li key={index} className={styles["header__menu-item"]}>
@@ -48,9 +56,6 @@ export default function Header(props) {
                             </li>
                         ))}
                     </ul>
-                    {data.links.map((link) => (
-                        <a href={link.href} className="button button--default">{link.text}</a>
-                    ))}
                 </div>
             </div>
         </header>

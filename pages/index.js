@@ -15,13 +15,12 @@ export default function Home() {
             <Head>
                 <title>Home Page | Bani Design</title>
             </Head>
-            <HomeBanner items={Data_Banner} />
+            {/* <HomeBanner items={Data_Banner} />
             <HomeAbout data={Data_HomeAbout} />
             <HomeWhyUs />
             <HomeService />
             <HomeContact />
-            <HomeGallery items={Data_Gallery} />
-
+            <HomeGallery items={Data_Gallery} /> */}
         </>
     )
 }

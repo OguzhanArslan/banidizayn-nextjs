@@ -1,8 +1,16 @@
 // main .
 
+@import "../../../assets/scss/mixins.scss";
+
 .header {
     background: #FFFFFF;
     box-shadow: 0px 0px 43px rgba(183, 183, 183, 0.25);
+
+    &--open {
+        .header__menu {
+            display: flex;
+        }
+    }
 
     &__top {
         background-color: #000000;
@@ -20,6 +28,10 @@
             &--right {
                 display: block;
                 text-align: right;
+
+                @include tablet-mobil {
+                    display: none;
+                }
             }
 
             &:last-child {
@@ -45,10 +57,79 @@
         justify-content: space-between;
         align-items: center;
         padding: 34px 0;
+
+        @include tablet-mobil {
+            padding: 10px 0;
+        }
+    }
+
+    &__logo {
+        img {
+            @include tablet-mobil {
+                max-width: 100px;
+                max-height: 100px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+        @include tablet-mobil {
+            display: block;
+            position: relative;
+            width: 40px;
+            height: 20px;
+            background-color: transparent;
+            border: 0;
+
+            &::before, &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: #000000;
+                position: absolute;
+                right: 0;
+            }
+
+            span {
+                width: 100%;
+                height: 2px;
+                background-color: #000000;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: -1px;
+            }
+
+            &::before {
+                width: 80%;
+                top: 0;
+            }
+
+            &::after {
+                width: 60%;
+                bottom: 0;
+            }
+        }
     }
 
     &__menu {
         display: flex;
+
+        @include tablet-mobil {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 174px;
+            width: 100%;
+            height: calc(100% - 174px);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+        }
 
         &-item {
             margin: 0 24px;
@@ -59,6 +140,10 @@
             font-size: 16px;
             line-height: 24px;
             color: #989898;
+
+            @include tablet-mobil {
+                color: #FFFFFF;
+            }
         }
     }
 }
