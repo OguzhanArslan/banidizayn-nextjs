@@ -46,7 +46,10 @@ export default function Header(props) {
                             />
                         </a>
                     </Link>
-                    <button className={styles["header__nav"]} onClick={() => setNavStatus(!navStatus)}><span></span></button>
+                    <button className={classnames({
+                        [styles["header__nav"]]: true,
+                        [styles["header__nav--active"]]: navStatus
+                    })} onClick={() => setNavStatus(!navStatus)}><span></span></button>
                     <ul className={styles["header__menu"]}>
                         {data.menu.map((menu, index) => (
                             <li key={index} className={styles["header__menu-item"]}>

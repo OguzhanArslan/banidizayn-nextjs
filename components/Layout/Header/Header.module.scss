@@ -25,10 +25,23 @@
             line-height: 18px;
             margin-right: 20px;
 
+            @include tablet-mobil {
+                font-size: 16px;
+                margin: 0;
+                width: 100%;
+                justify-content: center;
+            }
+
             &--right {
                 display: block;
                 text-align: right;
 
+                @include tablet-mobil {
+                    display: none;
+                }
+            }
+
+            &:first-child {
                 @include tablet-mobil {
                     display: none;
                 }
@@ -41,6 +54,10 @@
             i {
                 font-size: 16px;
                 margin-right: 6px;
+
+                @include tablet-mobil {
+                    font-size: 18px;
+                }
             }
 
             a {
@@ -48,6 +65,9 @@
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 18px;
+                @include tablet-mobil {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -83,6 +103,7 @@
             height: 20px;
             background-color: transparent;
             border: 0;
+            outline: 0;
 
             &::before, &::after {
                 content: "";
@@ -112,6 +133,10 @@
                 width: 60%;
                 bottom: 0;
             }
+
+            &--active {
+                
+            }
         }
     }
 
@@ -133,6 +158,10 @@
 
         &-item {
             margin: 0 24px;
+
+            @include tablet-mobil {
+                margin: 20px 0;
+            }
         }
 
         &-link {
@@ -142,6 +171,7 @@
             color: #989898;
 
             @include tablet-mobil {
+                font-size: 20px;
                 color: #FFFFFF;
             }
         }
