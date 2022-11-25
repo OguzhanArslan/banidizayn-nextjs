@@ -15,8 +15,8 @@ export default function Home() {
             <Head>
                 <title>Home Page | Bani Design</title>
             </Head>
-            {/* <HomeBanner items={Data_Banner} />
-            <HomeAbout data={Data_HomeAbout} />
+            <HomeBanner items={Data_Banner} />
+            {/* <HomeAbout data={Data_HomeAbout} />
             <HomeWhyUs />
             <HomeService />
             <HomeContact />

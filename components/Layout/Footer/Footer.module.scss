@@ -1,13 +1,25 @@
 // main: .
 
+@import "../../../assets/scss/mixins.scss";
+
 .footer {
     background: #000000;
     margin-top: 30px;
     padding: 112px 0 76px 0;
 
+    @include tablet-mobil {
+        padding: 20px 0;
+        margin-top: 20px;
+    } 
+
     &__logo {
         display: block;
         margin-bottom: 24px;
+
+        @include tablet-mobil {
+            text-align: center;
+            margin-bottom: 20px;
+        }
     }
 
     &__text {
@@ -16,11 +28,22 @@
         line-height: 21px;
         color: #C2C2C2;
         max-width: 330px;
+
+        @include tablet-mobil {
+            max-width: 100%;
+            text-align: center;
+        }
     }
 
     &__social {
         display: flex;
         margin-top: 24px;
+
+        @include tablet-mobil {
+            margin: 20px 0;
+            align-items: center;
+            justify-content: center;
+        }
 
         &-item {
             margin-right: 20px;
@@ -54,6 +77,10 @@
     }
 
     &__menu {
+        @include tablet-mobil {
+            margin-bottom: 20px;
+        }
+
         &-item {
             margin-bottom: 10px;
         }
@@ -89,6 +116,10 @@
 
     &__bottom {
         margin-top: 104px;
+
+        @include tablet-mobil {
+            margin-top: 20px;
+        }
     }
 
     &__copy {

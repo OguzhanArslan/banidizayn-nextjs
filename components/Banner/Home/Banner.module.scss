@@ -1,14 +1,29 @@
 // main: .
+@import "../../../assets/scss/mixins.scss";
 
 .promo {
     position: relative;
     
     &__item {
+        @include tablet-mobil {
+            padding-bottom: 40px;
+        }
+
         &-content {
             position: absolute;
             top: 50%;
             z-index: 2;
             transform: translateY(-50%);
+            
+            @include tablet-mobil {
+                border-radius: 14px;
+                background-color: white;
+                width: calc(100% - 30px);
+                transform: none;
+                top: auto;
+                bottom: 0;
+                padding: 20px;
+            }
         }
 
         &-title {
@@ -19,6 +34,14 @@
             font-weight: 700;
             font-size: 64px;
             line-height: 96px;
+
+            @include tablet-mobil {
+                border-radius: 0;
+                background-color: transparent;
+                font-size: 22px;
+                line-height: 26px;
+                margin-bottom: 10px;
+            }
         }
 
         &-description {
@@ -27,10 +50,20 @@
             font-size: 16px;
             line-height: 24px;
             max-width: 500px;
+
+            @include tablet-mobil {
+                font-size: 12px;
+                line-height: 16px;
+                width: 100%;
+            }
         }
 
         &-img {
             float: right;
+
+            @include tablet-mobil {
+                float: none;
+            }
         }
     }
 
@@ -38,16 +71,41 @@
         position: absolute;
         bottom: 20%;
 
+        @include tablet-mobil {
+            bottom: auto;
+            top: 50%;
+            margin-top: -60px;
+            width: calc(100% - 30px);
+            display: flex;
+            justify-content: space-between;
+        }
+
         &-btn {
             background-color: transparent;
             border: 0;
             padding: 0;
             margin-right: 30px;
 
+            @include tablet-mobil {
+                border-radius: 40px;
+                width: 40px;
+                height: 40px;
+                background-color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+                margin: 0;
+            }
+
             &:hover, &:active, &:focus {
                 outline: 0;
                 border: 0;
                 background-color: transparent;
+                
+                @include tablet-mobil {
+                    background-color: black;
+                }
             }
 
             &:last-child {
@@ -58,6 +116,11 @@
         &-icon {
             font-size: 32px;
             color: #000000;
+
+            @include tablet-mobil {
+                font-size: 18px;
+                color: white;
+            }
         }
     }
 }

@@ -16,6 +16,21 @@
         background-color: #000000;
         padding: 16px 0;
 
+        @include tablet-mobil {
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 98;
+        }
+
         &-text {
             display: flex;
             align-items: center;
@@ -56,7 +71,8 @@
                 margin-right: 6px;
 
                 @include tablet-mobil {
-                    font-size: 18px;
+                    font-size: 24px;
+                    color: #000000;
                 }
             }
 
@@ -66,7 +82,8 @@
                 font-size: 12px;
                 line-height: 18px;
                 @include tablet-mobil {
-                    font-size: 16px;
+                    display: none;
+                    color: #000000;
                 }
             }
         }
@@ -104,6 +121,10 @@
             background-color: transparent;
             border: 0;
             outline: 0;
+            
+            &:hover, &:active {
+                outline: 0;
+            }
 
             &::before, &::after {
                 content: "";
@@ -135,7 +156,19 @@
             }
 
             &--active {
-                
+                span {
+                    transform: rotate(45deg);
+                }
+
+                &::before {
+                    transform: rotate(-45deg);
+                    width: 100%;
+                    top: 9px;
+                }
+
+                &::after {
+                    display: none;
+                }
             }
         }
     }
@@ -147,13 +180,14 @@
             display: none;
             position: absolute;
             left: 0;
-            top: 174px;
+            top: 124px;
             width: 100%;
-            height: calc(100% - 174px);
+            height: calc(100% - 124px);
             flex-direction: column;
             align-items: center;
             justify-content: center;
             background-color: #000000;
+            z-index: 99;
         }
 
         &-item {

@@ -11,7 +11,7 @@ export default function Footer(props) {
         <footer className={styles.footer}>
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-md-4">
+                    <div className="col-12 col-lg-4">
                         <Link href="/">
                             <a className={styles["footer__logo"]}>
                                 <Image
@@ -31,10 +31,10 @@ export default function Footer(props) {
                             )) }
                         </ul>
                     </div>
-                    <div className="col-12 col-md-8">
+                    <div className="col-12 col-lg-8">
                         <div className="row">
                             { data.menu.map((menu) => (
-                                <div className={`col-12 col-md-${menu.big ? '4' : '3'}`}>
+                                <div className={`col-6 col-md-${menu.big ? '4' : '3'}`}>
                                     <h3 className={styles["footer__title"]}>{menu.title}</h3>
                                     <ul className={styles["footer__menu"]}>
                                         {menu.links.map((link) => (
@@ -47,7 +47,7 @@ export default function Footer(props) {
                                     </ul>
                                 </div>
                             )) }
-                            <div className="col-12 col-md-5">
+                            <div className="col-12 col-lg-5">
                                 <h3 className={styles["footer__title"]}>{ data.contact.title }</h3>
                                 <ul className={styles["footer__info"]}>
                                     { data.contact.items.map((item) => {
