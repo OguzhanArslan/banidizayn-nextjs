@@ -38,9 +38,9 @@
             @include tablet-mobil {
                 border-radius: 0;
                 background-color: transparent;
-                font-size: 22px;
-                line-height: 26px;
-                margin-bottom: 10px;
+                font-size: 36px;
+                line-height: 1.2;
+                margin-bottom: 20px;
             }
         }
 
@@ -52,8 +52,7 @@
             max-width: 500px;
 
             @include tablet-mobil {
-                font-size: 12px;
-                line-height: 16px;
+                line-height: 1.2;
                 width: 100%;
             }
         }

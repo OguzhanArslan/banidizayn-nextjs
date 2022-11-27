@@ -7,13 +7,13 @@ function Contact(props){
         <div className={styles["home__contact"]} style={{backgroundImage: `url(${ContactBg.src})`}}>
             <div className="container">
                 <div className="row">
-                    <div className="col-2">
+                    <div className="col-12 col-lg-2">
                         <h2>Architeque</h2>
                     </div>
-                    <div className="col-7">
+                    <div className="col-12 col-lg-7">
                         <p>We’re committed to delivering eye-catching architect designs</p>
                     </div>
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <a href={""} className="button button--white">Contact Us</a>
                     </div>
                 </div>

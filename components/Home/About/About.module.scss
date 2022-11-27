@@ -1,8 +1,13 @@
 // main: .
+@import "../../../assets/scss/mixins.scss";
 
 .home {
     &__about {
         padding: 132px 0 148px 0;
+
+        @include tablet-mobil {
+            padding: 40px 0;
+        }
 
         &-content {
             background-size: cover;
@@ -12,6 +17,11 @@
             flex-direction: column;
             justify-content: space-between;
             padding-top: 60px;
+
+            @include tablet-mobil {
+                padding-top: 20px;
+                min-height: auto;
+            }
         }
 
         &-text {
@@ -21,6 +31,12 @@
                 font-size: 48px;
                 line-height: 72px;
                 margin-bottom: 12px;
+
+                @include tablet-mobil {
+                    font-size: 24px;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+                }
             }
 
             &-description {
@@ -29,6 +45,11 @@
                 font-size: 16px;
                 line-height: 24px;
                 margin-bottom: 60px;
+
+                @include tablet-mobil {
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+                }
             }
         }
 
@@ -36,6 +57,10 @@
             border-bottom: 1px #333535 solid;
             text-align: right;
             padding-bottom: 44px;
+
+            @include tablet-mobil {
+                padding: 20px 0;
+            }
 
             &-text {
                 color: #6C6C6C;

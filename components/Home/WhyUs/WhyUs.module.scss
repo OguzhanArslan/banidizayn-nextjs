@@ -1,8 +1,25 @@
 // main: .
+@import "../../../assets/scss/mixins.scss";
 
 .home {
     &__whyus {
         margin-bottom: 162px;
+
+        @include tablet-mobil {
+            margin-bottom: 20px;
+        }
+
+        &-row {
+            @include tablet-mobil {
+                flex-direction: column-reverse;
+            }
+        }
+
+        &-img {
+            @include tablet-mobil {
+                margin-bottom: 40px;
+            }
+        }
         
         h2 {
             color: #000000;
@@ -10,20 +27,11 @@
             font-size: 48px;
             line-height: 72px;
             margin-bottom: 34px;
-        }
 
-        p {
-            color: #6C6C6C;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 21px;
-            margin-bottom: 12px;
-
-            strong {
-                color: #000000;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 27px;
+            @include tablet-mobil {
+                font-size: 36px;
+                line-height: 1;
+                margin-bottom: 20px;
             }
         }
     }

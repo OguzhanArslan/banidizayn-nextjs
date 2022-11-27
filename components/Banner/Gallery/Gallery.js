@@ -13,7 +13,16 @@ export default function Gallery({  items }) {
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: false,
-        fade: false
+        fade: false,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }
+        ]
     };
 
     return (

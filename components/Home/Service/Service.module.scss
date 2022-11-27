@@ -1,5 +1,7 @@
 // main: .
 
+@import "../../../assets/scss/mixins.scss";
+
 .home {
     &__service {
         background-size: cover;
@@ -9,16 +11,32 @@
         width: 100%;
         min-height: 777px;
 
+        @include tablet-mobil {
+            min-height: auto;
+            padding: 40px 0;
+        }
+
         &-title {
             padding-top: 140px;
             padding-bottom: 77px;
             text-align: right;
+
+            @include tablet-mobil {
+                padding: 0 0 40px 0;
+                text-align: left;
+            }
 
             h2 {
                 color: #000000;
                 font-weight: 700;
                 font-size: 64px;
                 line-height: 96px;
+
+                @include tablet-mobil {
+                    font-size: 36px;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+                }
             }
 
             p {
@@ -26,6 +44,10 @@
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 24px;
+
+                @include tablet-mobil {
+                    line-height: 1.2;
+                }
             }
         }
 
@@ -33,6 +55,12 @@
             background-color: #FFFFFF;
             border-left: 3px #D6D6D6 solid;
             padding: 62px 44px;
+
+            @include tablet-mobil {
+                padding: 20px;
+                border-left: 0;
+                margin-bottom: 20px;
+            }
 
             h3 {
                 color: #000000;

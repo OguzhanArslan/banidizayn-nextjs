@@ -11,13 +11,13 @@ export default function HomeAbout(props) {
         <div className={styles["home__about"]}>
             <div className="container">
                 <div className="row">
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-lg-6">
                         <Image
                             src={AboutImg}
                             alt={"About"}
                         />
                     </div>
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-lg-6">
                         <div className={styles["home__about-content"]} style={{backgroundImage: `url(${AboutBg.default.src})`}}>
                             <div className={styles["home__about-text"]}>
                                 <h2 className={styles["home__about-text-title"]}>{props.data.title}</h2>
