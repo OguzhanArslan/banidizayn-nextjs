@@ -3,10 +3,19 @@
 
 .promo {
     position: relative;
+
+    &__container {
+        @include tablet-mobil {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
     
     &__item {
         @include tablet-mobil {
-            padding-bottom: 40px;
+            display: flex;
+            flex-direction: column-reverse;
         }
 
         &-content {
@@ -16,13 +25,14 @@
             transform: translateY(-50%);
             
             @include tablet-mobil {
-                border-radius: 14px;
+                border-radius: 24px;
                 background-color: white;
-                width: calc(100% - 30px);
+                position: relative;
+                top: 0;
                 transform: none;
-                top: auto;
-                bottom: 0;
-                padding: 20px;
+                padding: 15px;
+                margin: 0 15px;
+                top: -50px;
             }
         }
 
@@ -38,9 +48,10 @@
             @include tablet-mobil {
                 border-radius: 0;
                 background-color: transparent;
-                font-size: 36px;
+                font-size: 32px;
                 line-height: 1.2;
                 margin-bottom: 20px;
+                padding-right: 0;
             }
         }
 
@@ -52,8 +63,10 @@
             max-width: 500px;
 
             @include tablet-mobil {
-                line-height: 1.2;
+                font-size: 14px;
+                line-height: 1.4;
                 width: 100%;
+                max-width: 100%;
             }
         }
 
@@ -71,12 +84,7 @@
         bottom: 20%;
 
         @include tablet-mobil {
-            bottom: auto;
-            top: 50%;
-            margin-top: -60px;
-            width: calc(100% - 30px);
-            display: flex;
-            justify-content: space-between;
+            display: none;
         }
 
         &-btn {
@@ -85,26 +93,10 @@
             padding: 0;
             margin-right: 30px;
 
-            @include tablet-mobil {
-                border-radius: 40px;
-                width: 40px;
-                height: 40px;
-                background-color: black;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 10px;
-                margin: 0;
-            }
-
             &:hover, &:active, &:focus {
                 outline: 0;
                 border: 0;
                 background-color: transparent;
-                
-                @include tablet-mobil {
-                    background-color: black;
-                }
             }
 
             &:last-child {
@@ -115,11 +107,6 @@
         &-icon {
             font-size: 32px;
             color: #000000;
-
-            @include tablet-mobil {
-                font-size: 18px;
-                color: white;
-            }
         }
     }
 }

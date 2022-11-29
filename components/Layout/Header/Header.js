@@ -52,7 +52,7 @@ export default function Header(props) {
                     })} onClick={() => setNavStatus(!navStatus)}><span></span></button>
                     <ul className={styles["header__menu"]}>
                         {data.menu.map((menu, index) => (
-                            <li key={index} className={styles["header__menu-item"]}>
+                            <li key={2 * index} className={styles["header__menu-item"]}>
                                 <Link href={menu.href}>
                                     <a className={styles["header__menu-link"]}>{menu.text}</a>
                                 </Link>
